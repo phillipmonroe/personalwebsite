@@ -5,8 +5,8 @@ import {
   HostListener,
   Inject
 } from "@angular/core";
-import { Location } from "@angular/common";
-import { DOCUMENT } from "@angular/common";
+import { Location, DOCUMENT } from "@angular/common";
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: "app-root",
@@ -16,9 +16,10 @@ import { DOCUMENT } from "@angular/common";
 export class AppComponent implements OnInit {
   constructor(
     private renderer: Renderer2,
+    private router: Router,
     public location: Location,
     @Inject(DOCUMENT) document
-  ) {}
+  ) { }
   @HostListener("window:scroll", ["$event"])
   onWindowScroll(e) {
     if (window.pageYOffset > 100) {
@@ -37,5 +38,11 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
     this.onWindowScroll(event);
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 }

@@ -14,7 +14,7 @@ export class IndexComponent implements OnInit, OnDestroy {
   pagination = 3;
   pagination1 = 1;
   constructor() {}
-  scrollToDownload(element: any) {
+  scrollToElement(element: any) {
     element.scrollIntoView({ behavior: "smooth" });
   }
   ngOnInit() {

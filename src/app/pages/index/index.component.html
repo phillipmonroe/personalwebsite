@@ -14,7 +14,7 @@
     <div class="navbar-collapse justify-content-end" [collapse]="isCollapsed" id="navigation">
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand"><a> BLK• </a></div>
+          <div class="col-6 collapse-brand"><a>Phillip Monroe</a></div>
           <div class="col-6 collapse-close text-right">
             <button aria-controls="navigation-index" aria-label="Toggle navigation" class="navbar-toggler"
               [attr.aria-expanded]="!isCollapsed" (click)="isCollapsed = !isCollapsed" id="navigation" type="button">
@@ -25,51 +25,38 @@
       </div>
       <ul class="navbar-nav">
         <li class="nav-item p-0">
-          <a class="nav-link" href="mailto:phillipkmonroe@gmail.com" placement="bottom" target="_blank"
-            tooltip="Send me an email!">
+          <a class="nav-link" href="mailto:phillipkmonroe@gmail.com" target="_blank" tooltip="Send me an email!">
             <i class="tim-icons icon-email-85"> </i>
             <p class="d-lg-none d-xl-none">Email</p>
           </a>
         </li>
         <li class="nav-item p-0">
-          <a class="nav-link" href="https://github.com/phillipmonroe" placement="bottom" target="_blank"
-            tooltip="Check out my Github!">
+          <a class="nav-link" href="https://github.com/phillipmonroe" target="_blank" tooltip="Check out my Github!">
             <i class="fab fa-github"> </i>
-            <p class="d-lg-none d-xl-none">Email</p>
+            <p class="d-lg-none d-xl-none">Github</p>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-none d-lg-block" href="javascript:void(0)" (click)="scrollToDownload(skills)">
+          <a class="nav-link" href="javascript:void(0)" (click)="scrollToElement(skills)">
             Skills
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-none d-lg-block" href="javascript:void(0)" (click)="scrollToDownload(projects)">
+          <a class="nav-link" href="javascript:void(0)" (click)="scrollToElement(projects)">
             Projects
           </a>
         </li>
-        <!-- <li class="dropdown nav-item" dropdown>
-          <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" dropdownToggle
-            href="javascript:void(0)">
-            <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Projects
-          </a>
-          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
-            <a class="dropdown-item"
-              href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview">
-              <i class="tim-icons icon-paper"> </i> Documentation
-            </a>
-            <a class="dropdown-item" [routerLink]="['/register']">
-              <i class="tim-icons icon-bullet-list-67"> </i> Register Page
-            </a>
-            <a class="dropdown-item" [routerLink]="['/landing']">
-              <i class="tim-icons icon-image-02"> </i> Landing Page
-            </a>
-            <a class="dropdown-item" [routerLink]="['/profile']">
-              <i class="tim-icons icon-single-02"> </i> Profile Page
-            </a>
-          </div>
-        </li> -->
         <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']">
+            Contact Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/experience']">
+            Experience
+          </a>
+        </li>
+        <li class="nav-item p-0">
           <a class="nav-link btn btn-default d-none d-lg-block" href="/downloads/resume.pdf"
             download="Phillip_Monroe_Resume.pdf">
             <i class="tim-icons icon-cloud-download-93"> </i> Download my Resume
@@ -104,55 +91,55 @@
         <div class="progress-container progress-success">
           <span class="progress-badge"> Java </span>
           <progressbar class="progress-bar-success" [value]="100">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Expert </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> C </span>
           <progressbar class="progress-bar-success" [value]="80">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Advanced </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> C++ </span>
           <progressbar class="progress-bar-success" [value]="50">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Intermediate </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> C# </span>
           <progressbar class="progress-bar-success" [value]="85">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Advanced </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> Python </span>
           <progressbar class="progress-bar-success" [value]="85">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Advanced </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> SQL </span>
           <progressbar class="progress-bar-success" [value]="70">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Intermediate </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> Angular </span>
           <progressbar class="progress-bar-success" [value]="60">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Intermediate </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> Linux </span>
           <progressbar class="progress-bar-success" [value]="100">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Expert </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> Windows </span>
           <progressbar class="progress-bar-success" [value]="100">
-            <span class="progress-value"> Skilled </span>
+            <span class="progress-value"> Expert </span>
           </progressbar>
         </div>
       </div>
@@ -165,7 +152,7 @@
         <div class="card">
           <div class="card-header">
             <h4>
-              Project #1
+              Lexi
             </h4>
             <tabset class="nav-tabs-success">
               <tab>
@@ -173,14 +160,8 @@
                   <i class="tim-icons icon-align-left-2"> </i> Summary
                 </ng-template>
                 <p>
-                  Collaboratively administrate empowered markets via
-                  plug-and-play networks. Dynamically procrastinate B2C
-                  users after installed base benefits. <br />
-
-                  <br />
-
-                  Dramatically visualize customer directed convergence
-                  without revolutionary ROI.
+                  This is a simple text editor that was used to demonstrate knowledge of various object oriented design
+                  principles.
                 </p>
                 <br />
               </tab>
@@ -188,15 +169,47 @@
                 <ng-template tabHeading>
                   <i class="tim-icons icon-laptop"> </i> Technical Details
                 </ng-template>
+                <b style="color:white">Programming Languages:</b>
+                <ul>
+                  <li>Java</li>
+                </ul>
+                <b style="color:white">Design Principles:</b>
                 <ul>
                   <li>
-                    <p>What</p>
+                    Abstract Factory
                   </li>
                   <li>
-                    <p>Languages</p>
+                    Bridge
                   </li>
                   <li>
-                    <p>Were Used</p>
+                    Chain Of Responsibility
+                  </li>
+                  <li>
+                    Command
+                  </li>
+                  <li>
+                    Composite
+                  </li>
+                  <li>
+                    Decorator
+                  </li>
+                  <li>
+                    Factory Method
+                  </li>
+                  <li>
+                    Iterator
+                  </li>
+                  <li>
+                    Prototype
+                  </li>
+                  <li>
+                    Singleton
+                  </li>
+                  <li>
+                    Strategy
+                  </li>
+                  <li>
+                    Visitor
                   </li>
                 </ul>
               </tab>
@@ -206,16 +219,17 @@
                 </ng-template>
                 <table>
                   <tr>
-                    <td><button class="btn btn-info btn-round mr-1" type="button">
+                    <td><a class="btn btn-info btn-round mr-1" href="https://github.com/phillipmonroe/Lexi"
+                        target="_blank">
                         <i class="fab fa-github"> </i> GitHub Repository
-                      </button></td>
+                      </a></td>
                   </tr>
                   <br />
                   <tr>
-                    <td>
-                      <button class="btn btn-muted btn-round mr-1" type="button">
+                    <td><a class="btn btn-muted btn-round mr-1"
+                        href="https://github.com/phillipmonroe/Lexi/archive/master.zip" target="_blank">
                         <i class="tim-icons icon-bag-16"> </i> Download Zip
-                      </button></td>
+                      </a></td>
                   </tr>
                 </table>
                 <br />
@@ -226,7 +240,7 @@
         <div class="card">
           <div class="card-header">
             <h4>
-              Project #2
+              CityGo Transit App
             </h4>
             <tabset class="nav-tabs-success">
               <tab>
@@ -234,14 +248,11 @@
                   <i class="tim-icons icon-align-left-2"> </i> Summary
                 </ng-template>
                 <p>
-                  Collaboratively administrate empowered markets via
-                  plug-and-play networks. Dynamically procrastinate B2C
-                  users after installed base benefits. <br />
-
-                  <br />
-
-                  Dramatically visualize customer directed convergence
-                  without revolutionary ROI.
+                  This is an application made for <a class="btn btn-link btn-success mr-1"
+                    href="https://www.citygoboise.com/" target="_blank">CityGo</a>. It automates distribution of bus
+                  passes to employees whose companies are members of CityGo. I worked on the back end as well as
+                  connecting the front end and back end together. I also handled the communication with a third-party
+                  API.
                 </p>
                 <br />
               </tab>
@@ -250,15 +261,10 @@
                   <i class="tim-icons icon-laptop"> </i> Technical Details
                 </ng-template>
                 <ul>
-                  <li>
-                    <p>What</p>
-                  </li>
-                  <li>
-                    <p>Languages</p>
-                  </li>
-                  <li>
-                    <p>Were Used</p>
-                  </li>
+                  <li><b>Backend: </b>Python Flask</li>
+                  <li><b>Database: </b>MySQL</li>
+                  <li><b>Frontend: </b>Angular</li>
+                  <li><b>Authentication: </b>Auth0</li>
                 </ul>
               </tab>
               <tab>
@@ -267,16 +273,17 @@
                 </ng-template>
                 <table>
                   <tr>
-                    <td><button class="btn btn-info btn-round mr-1" type="button">
+                    <td><a class="btn btn-info btn-round mr-1" href="https://github.com/phillipmonroe/CityGoTransit"
+                        target="_blank">
                         <i class="fab fa-github"> </i> GitHub Repository
-                      </button></td>
+                      </a></td>
                   </tr>
                   <br />
                   <tr>
-                    <td>
-                      <button class="btn btn-muted btn-round mr-1" type="button">
+                    <td><a class="btn btn-muted btn-round mr-1"
+                        href="https://github.com/phillipmonroe/CityGoTransit/archive/master.zip" target="_blank">
                         <i class="tim-icons icon-bag-16"> </i> Download Zip
-                      </button></td>
+                      </a></td>
                   </tr>
                 </table>
                 <br />
@@ -284,531 +291,161 @@
             </tabset>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- <div class="section section-basic" id="basic-elements">
-      <div class="container">
-        <h2 class="title">Basic Elements</h2>
-
-        <h3>Links</h3>
-        <div class="row">
-          <div class="col-md-8">
-            <button class="btn btn-link mr-1">Default</button>
-            <button class="btn btn-link btn-primary mr-1">Primary</button>
-            <button class="btn btn-link btn-info mr-1">Info</button>
-            <button class="btn btn-link btn-success mr-1">Success</button>
-            <button class="btn btn-link btn-warning mr-1">Warning</button>
-            <button class="btn btn-link btn-danger">Danger</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section-tabs">
-      <div class="container">
-        <div class="title">
-          <h3 class="mb-3">Navigation Tabs</h3>
-        </div>
-        <div class="row">
-          <div class="col-md-10 ml-auto col-xl-6 mr-auto">
-            <div class="mb-3">
-              <small class="text-uppercase font-weight-bold">
-                With icons
-              </small>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <tabset class="nav-tabs-danger">
-                  <tab>
-                    <ng-template tabHeading>
-                      <i class="tim-icons icon-spaceship"> </i> Profile
-                    </ng-template>
-                    <p>
-                      Collaboratively administrate empowered markets via
-                      plug-and-play networks. Dynamically procrastinate B2C
-                      users after installed base benefits. <br />
-
-                      <br />
-
-                      Dramatically visualize customer directed convergence
-                      without revolutionary ROI.
-                    </p>
-                  </tab>
-                  <tab>
-                    <ng-template tabHeading>
-                      <i class="tim-icons icon-settings-gear-63"> </i> Settings
-                    </ng-template>
-                    <p>
-                      Completely synergize resource taxing relationships via
-                      premier niche markets. Professionally cultivate one-to-one
-                      customer service with robust ideas. <br />
-
-                      <br />
-
-                      Dynamically innovate resource-leveling customer service
-                      for state of the art customer service.
-                    </p>
-                  </tab>
-                  <tab>
-                    <ng-template tabHeading>
-                      <i class="tim-icons icon-bag-16"> </i> Options
-                    </ng-template>
-                    <p>
-                      Efficiently unleash cross-media information without
-                      cross-media value. Quickly maximize timely deliverables
-                      for real-time schemas. <br />
-
-                      <br />
-
-                      Dramatically maintain clicks-and-mortar solutions without
-                      functional solutions.
-                    </p>
-                  </tab>
-                </tabset>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-10 ml-auto col-xl-6 mr-auto">
-            <div class="mb-3">
-              <small class="text-uppercase font-weight-bold"> With text </small>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <tabset class="nav-tabs-danger">
-                  <tab heading="Profile">
-                    <p>
-                      These cases are perfectly simple and easy to distinguish.
-                      In a free hour, when our power of choice is untrammelled
-                      and when nothing prevents our being able to do what we
-                      like best, every pleasure is to be welcomed and every pain
-                      avoided. <br />
-
-                      But in certain circumstances and owing to the claims of
-                      duty or the obligations of business it will frequently
-                      occur that pleasures
-                    </p>
-                  </tab>
-                  <tab heading="Settings">
-                    <p>
-                      I will be the leader of a company that ends up being worth
-                      billions of dollars, because I got the answers. I
-                      understand culture. I am the nucleus. I think thatâs a
-                      responsibility that I have, to push possibilities, to show
-                      people, this is the level that things could be at. I think
-                      thatâs a responsibility that I have, to push
-                      possibilities, to show people, this is the level that
-                      things could be at.
-                    </p>
-                  </tab>
-                  <tab heading="Options">
-                    <p>
-                      I think thatâs a responsibility that I have, to push
-                      possibilities, to show people, this is the level that
-                      things could be at. So when you get something that has the
-                      name Kanye West on it, itâs supposed to be pushing the
-                      furthest possibilities. I will be the leader of a company
-                      that ends up being worth billions of dollars, because I
-                      got the answers. I understand culture. I am the nucleus.
-                    </p>
-                  </tab>
-                </tabset>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section section-pagination">
-      <img class="path" src="assets/img/path4.png" />
-
-      <img class="path path1" src="assets/img/path5.png" />
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="mb-4">Progress Bars</h3>
-            <div class="progress-container">
-              <span class="progress-badge"> Default </span>
-              <progressbar [value]="25">
-                <span class="progress-value"> 25% </span>
-              </progressbar>
-            </div>
-            <div class="progress-container progress-danger">
-              <span class="progress-badge"> Danger </span>
-              <progressbar class="progress-bar-danger" [value]="60">
-                <span class="progress-value"> 60% </span>
-              </progressbar>
-            </div>
-            <br />
-          </div>
-          <div class="col-md-6">
-            <h3 class="mb-5">Pagination</h3>
-            <pagination class="pagination-danger" [(ngModel)]="pagination1" [totalItems]="30">
-            </pagination>
-            <pagination class="pagination-danger" [boundaryLinks]="true" [totalItems]="45" [ngModel]="pagination"
-              previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;">
-            </pagination>
-            <br />
-
-            <h3 class="mb-5">Labels</h3>
-            <span class="badge badge-default mr-1"> Default </span>
-            <span class="badge badge-primary mr-1"> Primary </span>
-            <span class="badge badge-success mr-1"> Success </span>
-            <span class="badge badge-info mr-1"> Info </span>
-            <span class="badge badge-warning mr-1"> Warning </span>
-            <span class="badge badge-danger mr-1"> Danger </span>
-            <span class="badge badge-neutral"> Neutral </span>
-          </div>
-        </div>
-        <br />
-      </div>
-    </div>
-
-    <div class="section section-typo">
-      <img class="path" src="assets/img/path1.png" />
-
-      <img class="path path1" src="assets/img/path3.png" />
-
-      <div class="container">
-        <h3 class="title">Typography</h3>
-        <div id="typography">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="typography-line">
-                <h1><span> Header 1 </span> The Life of BLK• Design System</h1>
-              </div>
-              <div class="typography-line">
-                <h2><span> Header 2 </span> The Life of BLK• Design System</h2>
-              </div>
-              <div class="typography-line">
-                <h3><span> Header 3 </span> The Life of BLK• Design System</h3>
-              </div>
-              <div class="typography-line">
-                <h4><span> Header 4 </span> The Life of BLK• Design System</h4>
-              </div>
-              <div class="typography-line">
-                <h5><span> Header 5 </span> The Life of BLK• Design System</h5>
-              </div>
-              <div class="typography-line">
-                <h6><span> Header 6 </span> The Life of BLK• Design System</h6>
-              </div>
-              <div class="typography-line">
+        <div class="card">
+          <div class="card-header">
+            <h4>
+              This website!
+            </h4>
+            <tabset class="nav-tabs-success">
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-align-left-2"> </i> Summary
+                </ng-template>
                 <p>
-                  <span> Paragraph </span> I will be the leader of a company
-                  that ends up being worth billions of dollars, because I got
-                  the answers. I understand culture. I am the nucleus. I think
-                  thatâs a responsibility that I have, to push possibilities, to
-                  show people, this is the level that things could be at.
+                  This is a website used to show off some cool thing about me. I had a fun time making it, and I hope
+                  you are having a fun time browsing it.
                 </p>
-              </div>
-              <div class="typography-line">
-                <span> Quote </span>
-                <blockquote>
-                  <p class="blockquote blockquote-danger">
-                    "I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers. I understand
-                    culture. I am the nucleus. I think thatâs a responsibility
-                    that I have, to push possibilities, to show people, this is
-                    the level that things could be at." <br />
+                <br />
+                <small>
+                  please hire me
+                </small>
 
-                    <br />
-
-                    <small> - Noaa </small>
-                  </p>
-                </blockquote>
-              </div>
-              <div class="typography-line">
-                <span> Muted Text </span>
-                <p class="text-muted">
-                  I will be the leader of a company that ends up being worth
-                  billions of dollars, because I got the answers...
-                </p>
-              </div>
-              <div class="typography-line">
-                <span> Primary Text </span>
-                <p class="text-primary">
-                  I will be the leader of a company that ends up being worth
-                  billions of dollars, because I got the answers...
-                </p>
-              </div>
-              <div class="typography-line">
-                <span> Info Text </span>
-                <p class="text-info">
-                  I will be the leader of a company that ends up being worth
-                  billions of dollars, because I got the answers...
-                </p>
-              </div>
-              <div class="typography-line">
-                <span> Success Text </span>
-                <p class="text-success">
-                  I will be the leader of a company that ends up being worth
-                  billions of dollars, because I got the answers...
-                </p>
-              </div>
-              <div class="typography-line">
-                <span> Warning Text </span>
-                <p class="text-warning">
-                  I will be the leader of a company that ends up being worth
-                  billions of dollars, because I got the answers...
-                </p>
-              </div>
-              <div class="typography-line">
-                <span> Danger Text </span>
-                <p class="text-danger">
-                  I will be the leader of a company that ends up being worth
-                  billions of dollars, because I got the answers...
-                </p>
-              </div>
-              <div class="typography-line">
-                <h2>
-                  <span> Small Tag </span> Header with small subtitle <br />
-
-                  <small> Use "small" tag for the headers </small>
-                </h2>
-              </div>
-            </div>
+                <br /><br />
+              </tab>
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-laptop"> </i> Technical Details
+                </ng-template>
+                <ul>
+                  <li>BootStrap 4</li>
+                  <li>Angular</li>
+                  <li>Poppins Font</li>
+                  <li>noUISlider</li>
+                  <li>Popper.js</li>
+                  <li>BLK Design System</li>
+                </ul>
+              </tab>
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-cloud-download-93"> </i> Source Code
+                </ng-template>
+                <table>
+                  <tr>
+                    <td><a class="btn btn-info btn-round mr-1" href="https://github.com/phillipmonroe/personalwebsite"
+                        target="_blank">
+                        <i class="fab fa-github"> </i> GitHub Repository
+                      </a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td><a class="btn btn-muted btn-round mr-1"
+                        href="https://github.com/phillipmonroe/personalwebsite/archive/master.zip" target="_blank">
+                        <i class="tim-icons icon-bag-16"> </i> Download Zip
+                      </a></td>
+                  </tr>
+                </table>
+                <br />
+              </tab>
+            </tabset>
           </div>
         </div>
-        <div class="space-50"></div>
-        <div id="images">
-          <h3 class="mb-5">Images</h3>
-          <div class="row">
-            <div class="col-sm-3 col-6">
-              <small class="d-block text-uppercase font-weight-bold mb-4">
-                Image
-              </small>
-              <img alt="Rounded image" class="img-fluid rounded shadow" src="assets/img/ryan.jpg"
-                style="width: 150px;" />
-            </div>
-            <div class="col-sm-3 col-6">
-              <small class="d-block text-uppercase font-weight-bold mb-4">
-                Circle Image
-              </small>
-              <img alt="Circle image" class="img-fluid rounded-circle shadow" src="assets/img/james.jpg"
-                style="width: 150px;" />
-            </div>
-            <div class="col-sm-3 col-6 mt-5 mt-sm-0">
-              <small class="d-block text-uppercase font-weight-bold mb-4">
-                Raised
-              </small>
-              <img alt="Raised image" class="img-fluid rounded shadow-lg" src="assets/img/lora.jpg"
-                style="width: 150px;" />
-            </div>
-            <div class="col-sm-3 col-6 mt-5 mt-sm-0">
-              <small class="d-block text-uppercase font-weight-bold mb-4">
-                Circle Raised
-              </small>
-              <img alt="Raised circle image" class="img-fluid rounded-circle shadow-lg" src="assets/img/mike.jpg"
-                style="width: 150px;" />
-            </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>
+              Multithreaded Merge Sort
+            </h4>
+            <tabset class="nav-tabs-success">
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-align-left-2"> </i> Summary
+                </ng-template>
+                <p>
+                  This is a sorting algorithm implemented in C. It takes a basic mergesort and then adapts it to use
+                  multiple threads. By using just 4 threads you can complete the sorting in about 1/3 of the
+                  time.
+                </p>
+                <br />
+              </tab>
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-laptop"> </i> Technical Details
+                </ng-template>
+                <b style="color:white">Programming Languages:</b>
+                <ul>
+                  <li>C</li>
+                </ul>
+              </tab>
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-cloud-download-93"> </i> Source Code
+                </ng-template>
+                <table>
+                  <tr>
+                    <td><a class="btn btn-info btn-round mr-1"
+                        href="https://github.com/phillipmonroe/Multithreaded-Merge-Sort" target="_blank">
+                        <i class="fab fa-github"> </i> GitHub Repository
+                      </a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td><a class="btn btn-muted btn-round mr-1"
+                        href="https://github.com/phillipmonroe/Multithreaded-Merge-Sort/archive/master.zip"
+                        target="_blank">
+                        <i class="tim-icons icon-bag-16"> </i> Download Zip
+                      </a></td>
+                  </tr>
+                </table>
+                <br />
+              </tab>
+            </tabset>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="section section-javascript" id="javascriptComponents">
-      <img class="path" src="assets/img/path5.png" />
-
-      <img class="path path1" src="assets/img/path5.png" />
-
-      <div class="container">
-        <h3 class="title mb-5">Javascript components</h3>
-        <h4 class="mb-5">Modal</h4>
-        <div class="row" id="modals">
-          <div class="col-md-4">
-            <button class="btn btn-danger" data-target="#myModal" (click)="myModal.show()">
-              Launch Modal
-            </button>
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-warning" data-target="#myModal1" (click)="myModal1.show()">
-              Launch Modal Mini
-            </button>
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-success" data-target="#myModal2" (click)="myModal2.show()">
-              Launch Modal Form
-            </button>
-          </div>
-        </div>
-        <br />
-
-        <br />
-
-        <h4 class="mb-5 mt-3">Datepicker</h4>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="datepicker-container">
-              <div class="form-group">
-                <input bsDatepicker class="form-control" data-datepicker-color="danger"
-                  [bsConfig]="{ isAnimated: true, containerClass: 'theme-red' }" [bsValue]="date" id="datepicker"
-                  type="text" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h4 class="mb-5 mt-3">Popovers</h4>
-            <button class="btn btn-default btn-sm mr-1" container="body" placement="top" popoverTitle="Popover on top"
-              popover="Here will be some very useful information about his popover." type="button">
-              On top
-            </button>
-            <button class="btn btn-default btn-sm mr-1" container="body" placement="right"
-              popoverTitle="Popover on right" popover="Here will be some very useful information about his popover.<br>
-              Here will be some very useful information about his popover." type="button">
-              On right
-            </button>
-            <button class="btn btn-default btn-sm mr-1" container="body" placement="bottom"
-              popoverTitle="Popover on bottom" popover="Here will be some very useful information about his popover."
-              type="button">
-              On bottom
-            </button>
-            <button class="btn btn-default btn-sm" container="body" placement="left" popoverTitle="Popover on left"
-              popover="Here will be some very useful information about his popover." type="button">
-              On left
-            </button>
-          </div>
-          <div class="col-md-6">
-            <h4 class="mb-5 mt-3">Tooltips</h4>
-            <button class="btn btn-default btn-tooltip btn-sm mr-1" data-animation="true" data-container="body"
-              data-delay="100" placement="left" tooltip="Tooltip on left" type="button">
-              On left
-            </button>
-            <button class="btn btn-default btn-tooltip btn-sm mr-1" data-animation="true" data-container="body"
-              placement="top" tooltip="Tooltip on top" type="button">
-              On top
-            </button>
-            <button class="btn btn-default btn-tooltip btn-sm mr-1" data-animation="true" data-container="body"
-              placement="bottom" tooltip="Tooltip on bottom" type="button">
-              On bottom
-            </button>
-            <button class="btn btn-default btn-tooltip btn-sm" data-animation="true" data-container="body"
-              placement="right" tooltip="Tooltip on right" type="button">
-              On right
-            </button>
-            <div class="clearfix"></div>
-            <br />
-
-            <br />
-          </div>
-        
-        </div>
-      </div>
-      
-    </div>-->
-    <div aria-hidden="true" aria-labelledby="myModalLabel" bsModal class="modal fade" #myModal="bs-modal" id="myModal"
-      role="dialog" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header justify-content-center">
-            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" (click)="myModal.hide()">
-              <i class="tim-icons icon-simple-remove"> </i>
-            </button>
-            <h4 class="title title-up">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country, in which roasted parts of sentences fly
-              into your mouth.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-default" type="button">Nice Button</button>
-            <button class="btn btn-danger" data-dismiss="modal" type="button" (click)="myModal.hide()">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div aria-hidden="true" aria-labelledby="myModalLabel" bsModal class="modal fade modal-mini modal-danger modal-mini"
-      #myModal1="bs-modal" id="myModal1" role="dialog" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header justify-content-center">
-            <button aria-hidden="true" class="close" data-dismiss="modal" (click)="myModal1.hide()" type="button">
-              <i class="tim-icons icon-simple-remove text-white"> </i>
-            </button>
-            <div class="modal-profile">
-              <i class="tim-icons icon-single-02"> </i>
-            </div>
-          </div>
-          <div class="modal-body">
-            <p>Always have an access to your profile</p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-link btn-neutral" type="button">Back</button>
-            <button class="btn btn-link btn-neutral" data-dismiss="modal" type="button" (click)="myModal1.hide()">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div aria-hidden="true" aria-labelledby="myModalLabel" bsModal class="modal fade modal-black" #myModal2="bs-modal"
-      id="myModal2" role="dialog" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header justify-content-center">
-            <button aria-hidden="true" class="close" data-dismiss="modal" (click)="myModal2.hide()" type="button">
-              <i class="tim-icons icon-simple-remove text-white"> </i>
-            </button>
-            <div class="text-muted text-center ml-auto mr-auto">
-              <h3 class="mb-0">Sign in with</h3>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="btn-wrapper text-center">
-              <a class="btn btn-neutral btn-icon mr-1" href="javascript:void(0)">
-                <img src="assets/img/github.svg" />
-              </a>
-              <a class="btn btn-neutral btn-icon" href="javascript:void(0)">
-                <img src="assets/img/google.svg" />
-              </a>
-            </div>
-            <div class="text-center text-muted mb-4 mt-3">
-              <small> Or sign in with credentials </small>
-            </div>
-            <form role="form">
-              <div class="form-group mb-3">
-                <div class="input-group input-group-alternative" [ngClass]="{ 'input-group-focus': focus1 === true }">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="tim-icons icon-email-85"> </i>
-                    </span>
-                  </div>
-                  <input class="form-control" placeholder="Email" type="email" (focus)="focus1 = true"
-                    (blur)="focus1 = false" />
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group input-group-alternative" [ngClass]="{ 'input-group-focus': focus2 === true }">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="tim-icons icon-key-25"> </i>
-                    </span>
-                  </div>
-                  <input class="form-control" placeholder="Password" type="password" (focus)="focus2 = true"
-                    (blur)="focus2 = false" />
-                </div>
-              </div>
-              <div class="form-check mt-3">
-                <label class="form-check-label">
-                  <input checked="checked" class="form-check-input" type="checkbox" />
-
-                  <span class="form-check-sign"> </span> Remember me!
-                </label>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-primary my-4" type="button">
-                  Sign in
-                </button>
-              </div>
-            </form>
+        <div class="card">
+          <div class="card-header">
+            <h4>
+              B-Tree
+            </h4>
+            <tabset class="nav-tabs-success">
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-align-left-2"> </i> Summary
+                </ng-template>
+                <p>
+                  This is a B-tree data structure that was implemented in Java.
+                </p>
+                <br />
+              </tab>
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-laptop"> </i> Technical Details
+                </ng-template>
+                <b style="color:white">Programming Languages:</b>
+                <ul>
+                  <li>Java</li>
+                </ul>
+              </tab>
+              <tab>
+                <ng-template tabHeading>
+                  <i class="tim-icons icon-cloud-download-93"> </i> Source Code
+                </ng-template>
+                <table>
+                  <tr>
+                    <td><a class="btn btn-info btn-round mr-1" href="https://github.com/phillipmonroe/B-Tree"
+                        target="_blank">
+                        <i class="fab fa-github"> </i> GitHub Repository
+                      </a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td><a class="btn btn-muted btn-round mr-1"
+                        href="https://github.com/phillipmonroe/B-Tree/archive/master.zip" target="_blank">
+                        <i class="tim-icons icon-bag-16"> </i> Download Zip
+                      </a></td>
+                  </tr>
+                </table>
+                <br />
+              </tab>
+            </tabset>
           </div>
         </div>
       </div>

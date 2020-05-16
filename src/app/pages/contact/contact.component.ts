@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
 
 @Component({
-  selector: "app-registerpage",
-  templateUrl: "registerpage.component.html"
+  selector: "app-contact",
+  templateUrl: "contact.component.html"
 })
-export class RegisterpageComponent implements OnInit, OnDestroy {
+export class ContactComponent implements OnInit, OnDestroy {
   isCollapsed = true;
   focus;
   focus1;
@@ -76,12 +76,12 @@ export class RegisterpageComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     var body = document.getElementsByTagName("body")[0];
-    body.classList.add("register-page");
+    body.classList.add("contact-page");
 
     this.onMouseMove(event);
   }
   ngOnDestroy() {
     var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("register-page");
+    body.classList.remove("contact-page");
   }
 }
