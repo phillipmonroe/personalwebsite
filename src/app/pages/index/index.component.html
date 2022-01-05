@@ -52,7 +52,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/experience']">
+          <a class="nav-link" href="javascript:void(0)" (click)="scrollToElement(experience)">
             Experience
           </a>
         </li>
@@ -90,57 +90,129 @@
         <h2 class="title">Skills</h2>
         <div class="progress-container progress-success">
           <span class="progress-badge"> Java </span>
-          <progressbar class="progress-bar-success" [value]="100">
-            <span class="progress-value"> Expert </span>
-          </progressbar>
-        </div>
-        <div class="progress-container progress-success">
-          <span class="progress-badge"> C </span>
-          <progressbar class="progress-bar-success" [value]="80">
+          <progressbar class="progress-bar-success" [value]="90">
             <span class="progress-value"> Advanced </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
+          <span class="progress-badge"> C </span>
+          <progressbar class="progress-bar-success" [value]="75">
+            <span class="progress-value"> Intermediate </span>
+          </progressbar>
+        </div>
+        <div class="progress-container progress-success">
           <span class="progress-badge"> C++ </span>
+          <progressbar class="progress-bar-success" [value]="100">
+            <span class="progress-value"> Advanced </span>
+          </progressbar>
+        </div>
+        <div class="progress-container progress-success">
+          <span class="progress-badge"> C# </span>
           <progressbar class="progress-bar-success" [value]="50">
             <span class="progress-value"> Intermediate </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
-          <span class="progress-badge"> C# </span>
-          <progressbar class="progress-bar-success" [value]="85">
-            <span class="progress-value"> Advanced </span>
-          </progressbar>
-        </div>
-        <div class="progress-container progress-success">
           <span class="progress-badge"> Python </span>
-          <progressbar class="progress-bar-success" [value]="85">
-            <span class="progress-value"> Advanced </span>
+          <progressbar class="progress-bar-success" [value]="50">
+            <span class="progress-value"> Intermediate </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> SQL </span>
-          <progressbar class="progress-bar-success" [value]="70">
+          <progressbar class="progress-bar-success" [value]="50">
             <span class="progress-value"> Intermediate </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
-          <span class="progress-badge"> Angular </span>
-          <progressbar class="progress-bar-success" [value]="60">
-            <span class="progress-value"> Intermediate </span>
+          <span class="progress-badge"> Unreal Engine </span>
+          <progressbar class="progress-bar-success" [value]="100">
+            <span class="progress-value"> Advanced </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> Linux </span>
-          <progressbar class="progress-bar-success" [value]="100">
-            <span class="progress-value"> Expert </span>
+          <progressbar class="progress-bar-success" [value]="75">
+            <span class="progress-value"> Intermediate </span>
           </progressbar>
         </div>
         <div class="progress-container progress-success">
           <span class="progress-badge"> Windows </span>
-          <progressbar class="progress-bar-success" [value]="100">
-            <span class="progress-value"> Expert </span>
+          <progressbar class="progress-bar-success" [value]="90">
+            <span class="progress-value"> Advanced </span>
           </progressbar>
+        </div>
+      </div>
+    </div>
+    <div class="section section-basic" id="experience" #experience>
+      <div class="container">
+        <h2 class="title">Experience</h2>
+        <div class="card card-register">
+            <div class="card-header">
+                <h4 class="card-title" style="color:white">&nbsp;&nbsp;Gameplay Programmer</h4>
+            </div>
+            <div class="card-body">
+                <table>
+                    <tr>
+                        <td>
+                            <h3><b>Company:</b> Fractal Blue Entertainment (a division of Visual Purple)</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><b>Start Date:</b> December 2021</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="card card-register">
+            <div class="card-header">
+                <h4 class="card-title" style="color:white">&nbsp;&nbsp;Programmer</h4>
+            </div>
+            <div class="card-body">
+                <table>
+                    <tr>
+                        <td>
+                            <h3><b>Company:</b> Visual Purple</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><b>Start Date:</b> September 2020</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><b>End Date:</b> December 2021</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="card card-register">
+            <div class="card-header">
+                <h4 class="card-title" style="color:white">&nbsp;&nbsp;Student Developer</h4>
+            </div>
+            <div class="card-body">
+                <table>
+                    <tr>
+                        <td>
+                            <h3><b>Company:</b> CityGo</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><b>Start Date:</b> January 2020</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><b>End Date:</b> April 2020</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
       </div>
     </div>

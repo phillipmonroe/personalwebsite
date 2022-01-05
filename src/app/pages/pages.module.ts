@@ -19,7 +19,6 @@ import { PopoverModule } from "ngx-bootstrap/popover";
 
 import { IndexComponent } from "./index/index.component";
 import { ContactComponent } from "./contact/contact.component";
-import { ExperienceComponent } from "./experience/experience.component";
 
 @NgModule({
   imports: [
@@ -42,13 +41,11 @@ import { ExperienceComponent } from "./experience/experience.component";
   ],
   declarations: [
     IndexComponent,
-    ContactComponent,
-    ExperienceComponent
+    ContactComponent
   ],
   exports: [
     IndexComponent,
-    ContactComponent,
-    ExperienceComponent
+    ContactComponent
   ],
   providers: []
 })

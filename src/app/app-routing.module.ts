@@ -5,13 +5,11 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { IndexComponent } from "./pages/index/index.component";
 import { ContactComponent } from "./pages/contact/contact.component";
-import { ExperienceComponent } from "./pages/experience/experience.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: IndexComponent },
-  { path: "contact", component: ContactComponent },
-  { path: "experience", component: ExperienceComponent }
+  { path: "contact", component: ContactComponent }
 ];
 
 @NgModule({
